@@ -1,3 +1,7 @@
+0.2.5
+-----
+* Fix invalid version condition
+
 0.2.4
 -----
 * Use pytest in setup.py and not tox
