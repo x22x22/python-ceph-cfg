@@ -427,7 +427,7 @@ class model_updater():
                         output["stderr"]))
         version_raw = output["stdout"].strip()
         version_raw_split = shlex.split(version_raw)
-        if len(version_raw_split) != 4 or len(version_raw_split) != 6 :
+        if len(version_raw_split) != 4 and len(version_raw_split) != 6 :
             raise Error("ceph returned an invalid version:'%s' " % (version_raw))
         if version_raw_split[0] != "ceph":
             raise Error("ceph returned an invalid version first value is not ceph:'%s' " % (version_raw))
